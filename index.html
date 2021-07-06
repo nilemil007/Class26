@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Class 26</title>
+
+	<style>
+		button{
+			padding: 10px 20px;
+		    background: linear-gradient(45deg, #341f97, #48dbfb);
+		    border: none;
+		    border-radius: 5px;
+		    cursor: pointer;
+		    color: #ffffff;
+		}
+		.container{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			height: 250px;
+		}
+		.box{
+			width: 200px;
+			height: 200px;
+			background-color: #2e86de;
+			margin: 20px;
+		}
+		.box:nth-child(even){
+			background-color: #341f97;
+		}
+		.box:nth-child(1){
+			position: absolute;
+		    top: 0;
+		    left: 20%;
+		}
+		.box:nth-child(2){
+			position: absolute;
+		    top: 0;
+		    left: 40%;
+		}
+		.box:nth-child(3){
+			position: absolute;
+		    top: 0;
+		    left: 60%;
+		}
+		#animate-1,
+		#animate-2,
+		#animate-3{
+			left:0;
+		}
+		#animate-custom{
+			position: absolute;
+			left:0;
+			height: 50px;
+		    overflow: hidden;
+		    white-space: nowrap;
+		}
+		#animate-custom p{
+		    color: #ffffff;
+		    margin: 50px auto 0;
+		    font-family: sans-serif;
+		}
+    
+	</style>
+</head>
+<body style="text-align: center;">
+
+	<h1>jQuery Fade Methods</h1>
+	<button type="button" id="fadetoggle">Click</button>
+	<div class="container">
+		<div id="fadetoggle-1" class="box"></div>
+		<div id="fadetoggle-2" class="box"></div>
+		<div id="fadetoggle-3" class="box"></div>
+	</div>
+
+	<hr>
+
+<!-- **************************************************************************** -->
+
+	<h1>jQuery FadeTo Methods</h1>
+	<button type="button" id="fadeto">Click</button>
+	<div class="container">
+		<div id="fadeto-1" class="box"></div>
+		<div id="fadeto-2" class="box"></div>
+		<div id="fadeto-3" class="box"></div>
+	</div>
+
+	<hr>
+
+<!-- **************************************************************************** -->
+
+	<h1>jQuery Slide Methods</h1>
+	<button type="button" id="slide">Click</button>
+	<div class="container">
+		<div id="slide-1" class="box"></div>
+		<div id="slide-2" class="box"></div>
+		<div id="slide-3" class="box"></div>
+	</div>
+
+	<hr>
+
+<!-- **************************************************************************** -->
+
+	<h1>jQuery The animate Methods</h1>
+	<button type="button" id="animate">Click</button>
+	<div class="container">
+		<div id="animate-1" class="box"></div>
+		<div id="animate-2" class="box"></div>
+		<div id="animate-3" class="box"></div>
+	</div>
+
+	<hr>
+
+<!-- **************************************************************************** -->
+
+	<h1>jQuery The animate Methods</h1>
+	<button type="button" id="animate-two">Click</button>
+	<div class="container">
+		<div id="animate-custom" class="box">
+			<p>Emil Sadekin Islam</p>
+		</div>
+	</div>
+
+	<hr>
+
+<!-- **************************************************************************** -->
+
+
+
+	<hr>
+
+<!-- **************************************************************************** -->
+
+
+
+	<hr>
+
+
+
+	<script src="jquery3.6.0.js"></script>
+	<script src="main.js"></script>
+	
+</body>
+</html>
